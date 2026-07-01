@@ -1563,8 +1563,7 @@ runs:
         if [ -f "$GKI_CONFIG" ]; then
           echo "✅ Injecting Docker configurations into $GKI_CONFIG..."
           cat << 'EOF' >> "$GKI_CONFIG"
-
-        # --- DOCKER & CONTAINER PREREQUISITES ---
+        ## --- DOCKER & CONTAINER PREREQUISITES --- #
         CONFIG_NAMESPACES=y
         CONFIG_NET_NS=y
         CONFIG_PID_NS=y
@@ -1583,7 +1582,7 @@ runs:
         CONFIG_IP_NF_FILTER=y
         CONFIG_IP_NF_TARGET_MASQUERADE=y
         CONFIG_OVERLAY_FS=y
-# ----------------------------------------
+        # ----------------------------------------
         EOF
           echo "Successfully appended Docker flags."
         else
