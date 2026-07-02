@@ -1,4 +1,4 @@
-name: Build and Release OnePlus Kernels
+name: Build and Release OnePlus Kernels ONLY Oneplus 10 Pro (for now)
 
 permissions:
   contents: write
