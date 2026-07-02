@@ -1552,7 +1552,7 @@ runs:
 
 
 
-      - name: Add Safe Docker & Container Support
+    - name: Add Safe Docker & Container Support
       shell: bash
       run: |
         set -euo pipefail
